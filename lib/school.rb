@@ -1,8 +1,20 @@
 class School 
-school.roster = {}
+  attr_accessor :name, :roster
+  
+  def initalize(name)
+    @name = name 
+    @roster = {}
+  end 
+  
+def add_student (student, level)
+  roster [level] || = []
+  roster [level] << student 
+end 
 
-def add_student 
-  school.add_student("Zach Morris", 9)
-school.roster
+def grade (level)
+  roster.detect do |x,y|
+    if x == level
+      return y 
+    end 
 end 
 end 
