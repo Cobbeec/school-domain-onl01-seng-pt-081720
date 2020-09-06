@@ -8,7 +8,7 @@ class School
   
 def add_student (student, level)
   roster [level] || = []
-  roster [level] << student 
+  roster [level]. push student 
 end 
 
 def grade (level)
