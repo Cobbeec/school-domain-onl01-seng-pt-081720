@@ -1,4 +1,3 @@
-school = School.new("Bayside High School")
 class School 
   attr_accessor :name, :roster
   
@@ -8,8 +7,8 @@ class School
   end 
   
 def add_student (student, level)
-  roster [level] || = []
-  roster [level]. push student 
+  roster[level] = []
+  roster[level] << student 
 end 
 
 def sort 
